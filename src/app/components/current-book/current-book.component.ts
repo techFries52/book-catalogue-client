@@ -13,7 +13,7 @@ export class CurrentBookComponent implements OnInit {
 
   current:Book = {
     bookId:0,
-    bookTitle:"placeholder",
+    title:"placeholder",
     author:"placeholder",
     genres:[],
     haveRead:true,
@@ -21,6 +21,10 @@ export class CurrentBookComponent implements OnInit {
   };
 
   ngOnInit(): void {
+    this.current = this.bookService.getCurrentSelection();
+  }
+
+  ngDoCheck() {
     this.current = this.bookService.getCurrentSelection();
   }
 

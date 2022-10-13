@@ -12,11 +12,11 @@ export class BookService {
   allBooks:any = [];
   currentSelection:Book = {
     bookId:0,
-    bookTitle:"placeholder",
-    author:"placeholder",
+    title:"Select A Book",
+    author:"book author",
     genres:[],
     haveRead:true,
-    series:"placeholder"
+    series:"book series"
   };
 
 

@@ -1,3 +1,5 @@
+
+
 <ul>
-    <li *ngFor="let book of allBooks">{{book.bookTitle}} - {{book.author}}</li>
+    <li *ngFor="let book of allBooks" (click)="onClick(book)">{{book.title}} - {{book.author}}</li>
 </ul>

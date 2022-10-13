@@ -15,7 +15,14 @@ export class BookListComponent implements OnInit {
 
   ngOnInit(): void {
     this.bookService.getAllBooksFromServer();
-    this.allBooks = this.bookService.allBooks;
+  }
+
+  ngDoCheck() {
+    this.allBooks = this.bookService.getAllBooks();
+  }
+
+  onClick(book:Book) {
+    this.bookService.setCurrentSelection(book);
   }
 
 }
