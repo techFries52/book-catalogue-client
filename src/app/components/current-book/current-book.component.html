@@ -1,6 +1,9 @@
-<div data-augmented-ui="tl-2-clip-x tr-2-clip-y br-2-clip-x bl-2-clip-y both" class="current">
+<div class="card text-white bg-primary">
     <div class="text">
-        <h2>{{current.title}}</h2>
-        <p>{{current.author}}, {{current.series}}</p>
+        <h2 class="card-header">{{current.title}}</h2>
+        <div class="card-body">
+            <p>{{current.author}}</p>
+            <p>{{current.series}} <span class="float-end" *ngIf="current.haveRead == true"></span></p>
+        </div> 
     </div>
 </div>

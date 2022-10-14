@@ -1,5 +1,5 @@
-
+<h3>{{allBooks.length}} Total Books <span class="float-end">Books Read: {{booksRead}}</span> </h3>
 
 <ul class="list-group">
-    <li class="list-group-item" *ngFor="let book of allBooks" (click)="onClick(book)">{{book.title}} - {{book.author}} <span class="float-end" *ngIf="book.haveRead == true">green</span></li>
+    <li class="list-group-item" *ngFor="let book of allBooks" (click)="onClick(book)">{{book.title}} - {{book.author}} <span class="float-end" *ngIf="book.haveRead == true"><i class="fa-solid fa-square-check bg-success"></i></span></li>
 </ul>
