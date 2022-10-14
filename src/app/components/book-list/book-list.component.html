@@ -1,5 +1,5 @@
 
 
-<ul>
-    <li *ngFor="let book of allBooks" (click)="onClick(book)">{{book.title}} - {{book.author}}</li>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let book of allBooks" (click)="onClick(book)">{{book.title}} - {{book.author}} <span class="float-end" *ngIf="book.haveRead == true">green</span></li>
 </ul>
