@@ -24,8 +24,41 @@ export class BookListComponent implements OnInit {
     this.totalBooksRead();    
   }
 
-  onClick(book:Book) {
+  selectCurrent(book:Book) {
     this.bookService.setCurrentSelection(book);
+    window.scrollTo(0,0);
+  }
+
+  sortByTitle() {
+    this.allBooks.sort(function(a,b) {
+      var textA = a.title.toLowerCase();
+      var textB = b.title.toLowerCase();
+      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    })
+  }
+
+  sortByAuthor() {
+    this.allBooks.sort(function(a,b) {
+      var textA = a.author.toLowerCase();
+      var textB = b.author.toLowerCase();
+      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    })
+  }
+
+  sortBySeries() {
+    this.allBooks.sort(function(a,b) {
+      var textA = a.series.toLowerCase();
+      var textB = b.series.toLowerCase();
+      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    })
+  }
+
+  sortByHaveRead() {
+    this.allBooks.sort(function(a,b) {
+      var textA = a.haveRead;
+      var textB = b.haveRead;
+      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    })
   }
 
   totalBooksRead(): void {

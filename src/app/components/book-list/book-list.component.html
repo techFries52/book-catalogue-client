@@ -10,20 +10,21 @@
 </div> -->
 
 
+
 <div class="border-container">
     <table>
         <thead>
             <tr class="text-white bg-primary border-container">
                 <th>Cover</th>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Series</th>
-                <th>Have Read</th>
+                <th (click)="sortByTitle()">Title</th>
+                <th (click)="sortByAuthor()">Author</th>
+                <th (click)="sortBySeries()">Series</th>
+                <th (click)="sortByHaveRead()">Have Read</th>
             </tr>
         </thead>
         <tbody>
-            <tr class="item" *ngFor="let book of allBooks" (click)="onClick(book)">
-                <td> <img src="{{book.picUrl}}" alt=""></td>
+            <tr class="item" *ngFor="let book of allBooks" (click)="selectCurrent(book)">
+                <td><img class="space-right" src="{{book.picUrl}}" alt=""></td>
                 <td>{{book.title}}</td>
                 <td>{{book.author}}</td>
                 <td>{{book.series}}</td>
