@@ -16,7 +16,8 @@ export class BookService {
     author:"book author",
     genres:[],
     haveRead:true,
-    series:"book series"
+    series:"book series",
+    picUrl:""
   };
 
 

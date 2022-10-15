@@ -2,6 +2,7 @@
     <div class="text">
         <h2 class="card-header">{{current.title}}</h2>
         <div class="card-body">
+            <img src="{{current.picUrl}}" alt="">
             <p>{{current.author}}</p>
             <p>{{current.series}} <span class="float-end" *ngIf="current.haveRead == true"></span></p>
         </div> 

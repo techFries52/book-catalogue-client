@@ -5,3 +5,26 @@
 .center {
     text-align: center;
 }
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+.item:nth-of-type(even) {
+    background-color: #ececec;
+}
+
+th, td {
+    margin: 5px;
+}
+
+.border-container {    
+    border: solid 3px #2fa4e7;
+    border-radius: 5px;
+}
+
+.text-white {
+    font-size: larger;
+}
+

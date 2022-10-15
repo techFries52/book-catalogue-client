@@ -17,7 +17,8 @@ export class CurrentBookComponent implements OnInit {
     author:"placeholder",
     genres:[],
     haveRead:true,
-    series:"placeholder"
+    series:"placeholder",
+    picUrl: ""
   };
 
   ngOnInit(): void {

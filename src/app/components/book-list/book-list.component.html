@@ -1,23 +1,38 @@
 <h3>{{allBooks.length}} Total Books <span class="float-end">Books Read: {{booksRead}}</span> </h3>
 
-<table>
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Series</th>
-            <th>Have Read</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let book of allBooks" (click)="onClick(book)">
-            <td>{{book.title}}</td>
-            <td>{{book.author}}</td>
-            <td>{{book.series}}</td>
-            <td>{{book.haveRead}}</td>
-        </tr>
-    </tbody>
-</table>
+
+<!-- <div class="row">
+    <div class="col-lg-4 card text-white bg-primary" *ngFor="let book of allBooks" (click)="onClick(book)">
+        <h5 class="card-header">{{book.title}}</h5>
+        <img class="" src="{{book.picUrl}}" alt="">
+        <p class="card-body">{{book.author}} - {{book.series}}</p>
+    </div>
+</div> -->
+
+
+<div class="border-container">
+    <table>
+        <thead>
+            <tr class="text-white bg-primary border-container">
+                <th>Cover</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Series</th>
+                <th>Have Read</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="item" *ngFor="let book of allBooks" (click)="onClick(book)">
+                <td> <img src="{{book.picUrl}}" alt=""></td>
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.series}}</td>
+                <td>{{book.haveRead}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 
 
 <!-- <ul class="list-group center">
