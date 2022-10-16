@@ -11,12 +11,17 @@ img {
     height: auto;
 }
 
+.item:nth-of-type(odd){
+    background-color: #fdfdfd;
+}
+
 .item:nth-of-type(even) {
     background-color: #ececec;
 }
 
 th, td {
     margin: 5px;
+    font-family: 'EB Garamond', serif;
 }
 
 .border-container {    
@@ -30,5 +35,9 @@ th, td {
 
 .space-right {
     margin-right: 15px;
+}
+
+table {
+    margin-right: 0px;
 }
 

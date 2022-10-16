@@ -3,7 +3,18 @@ img {
     height: auto;
 }
 
-h2 {
-    color: white;
+h4 {
+    color: inherit;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.671);
+    font-family: 'EB Garamond', serif;
+}
+
+.bg-banner {
+    background-image: url("~src/assets/banner.jpg");
+    background-position: center;
+    border-radius: 5px;
 }
 

@@ -7,12 +7,14 @@ import { CurrentBookComponent } from './components/current-book/current-book.com
 import { BookListComponent } from './components/book-list/book-list.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BookService } from './services/book.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CurrentBookComponent,
-    BookListComponent
+    BookListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
