@@ -8,13 +8,15 @@ import { BookListComponent } from './components/book-list/book-list.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BookService } from './services/book.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CurrentBookComponent,
     BookListComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
