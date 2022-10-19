@@ -29,17 +29,19 @@ export class LoginComponent implements OnInit {
 
   submit(): void{
     let body = new URLSearchParams();
-    body.set('username', 'fries');
-    body.set('password', '12345');
+    const formValues = this.form.value;
+
+    for(const key in formValues){
+      body.append(key, formValues[key]);
+    }
 
     let options = {
       headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded').set('withCredentials', 'true')
     }
 
-    console.log(body);
-    this.http.post<any>('Http://localhost:8080/api/login', body.toString() ,options)
+    this.http.post<any>('Http://localhost:8080/api/login', body ,options)
     .subscribe(
-      () => {
+      response => {        
         this.router.navigate(['/home']);
       }
     );
