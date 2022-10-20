@@ -8,7 +8,7 @@ h4 {
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: rgba(0, 0, 0, 0.74);
     font-family: 'EB Garamond', serif;
 }
 
@@ -17,5 +17,9 @@ h4 {
     background-position: center;
     border-radius: 5px;
     margin: 40px auto;
+}
+
+p {
+    font-size: large;
 }
 

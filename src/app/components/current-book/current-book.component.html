@@ -9,9 +9,9 @@
                         <img src="{{current.picUrl}}" alt="">
                     </div>
                     <div class="col-md-9">
-                        <h4>{{current.author}}</h4>
+                        <h3>{{current.author}}</h3>
                         <p>{{current.series}} <span class="float-end" *ngIf="current.haveRead == true"></span></p>
-                        <p>{{current.description}}</p>
+                        <p style="white-space: pre-wrap;">{{current.description}}</p>
                     </div>
                 </div>
             </div> 
