@@ -17,9 +17,9 @@ export class BookService {
     genres:[],
     haveRead:true,
     series:"book series",
-    picUrl:""
+    picUrl:"",
+    description:""
   };
-
 
   getAllBooksFromServer(): void {
     this.http.get<any>("http://localhost:8080/book").subscribe(
@@ -42,3 +42,4 @@ export class BookService {
   }
 
 }
+

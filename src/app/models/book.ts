@@ -7,6 +7,7 @@ export class Book {
         public genres: Array<string>,
         public haveRead: boolean,
         public series: string,
-        public picUrl: string
+        public picUrl: string,
+        public description: string
     ) {}
 }
