@@ -11,6 +11,8 @@ export class CurrentBookComponent implements OnInit {
 
   constructor( private bookService:BookService) { }
 
+  isReadMore:boolean = true;
+
   current:Book = {
     bookId:0,
     title:"placeholder",
@@ -28,6 +30,10 @@ export class CurrentBookComponent implements OnInit {
 
   ngDoCheck() {
     this.current = this.bookService.getCurrentSelection();
+  }
+
+  showMore(){
+    this.isReadMore = !this.isReadMore;
   }
 
 }
