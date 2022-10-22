@@ -31,3 +31,8 @@ p {
 .card-header {
     border-bottom: none;
 }
+
+.minheight {
+    min-height: 250px;
+    white-space: pre-wrap;
+}
