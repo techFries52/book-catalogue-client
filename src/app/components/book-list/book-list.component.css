@@ -40,3 +40,7 @@ th, td {
 table {
     margin-right: 0px;
 }
+
+.hvr-cursor {
+    cursor: pointer;
+}

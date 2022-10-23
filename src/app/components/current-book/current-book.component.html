@@ -13,7 +13,7 @@
                         <h3><span class="text-white">Series: </span>{{current.series}} <span class="float-end" *ngIf="current.haveRead == true"></span></h3>
                         <hr class="my-4">
                         <p [ngClass]="{'limitText': isReadMore}" class="minheight"><span class="text-white">Description </span> <br>{{current.description}}</p>
-                        <button class="btn btn-outline-primary" (click)="showMore()">{{ isReadMore ? 'Show More': 'Show Less'}}</button>
+                        <p class="text-white hvr-cursor" (click)="showMore()">{{ isReadMore ? 'Show More': 'Show Less'}}</p>
                     </div>
                 </div>
             </div> 

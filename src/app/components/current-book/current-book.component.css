@@ -36,3 +36,7 @@ p {
     min-height: 250px;
     white-space: pre-wrap;
 }
+
+.hvr-cursor {
+    cursor: pointer;
+}
